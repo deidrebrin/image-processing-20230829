@@ -320,12 +320,12 @@ we will use to refer to the folder throughout the lesson.)</p>
 </section><section id="software"><h2 class="section-heading">Software<a class="anchor" aria-label="anchor" href="#software"></a>
 </h2>
 <hr class="half-width"><ol style="list-style-type: decimal"><li>
-<p>Download and install the latest <a href="https://www.anaconda.com/distribution/" class="external-link">Anaconda distribution</a>
-for your operating system. Make sure to choose the Python 3 version (as
-opposed to the one with Python 2). If you wish to use an existing
-installation, be sure to upgrade your scikit-image to at least 0.19. You
-can upgrade to the latest scikit-image using the shell command that
-follows.</p>
+<p>Download and install the latest <a href="https://www.anaconda.com/download#downloads" class="external-link">Anaconda
+distribution</a> for your operating system. Make sure to choose the
+Python 3 version (as opposed to the one with Python 2). If you wish to
+use an existing installation, be sure to upgrade your scikit-image to at
+least 0.19. You can upgrade to the latest scikit-image using the shell
+command that follows.</p>
 <div id="callout1" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -336,6 +336,14 @@ distribution<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
 <pre class="shell"><code>conda upgrade -y scikit-image</code></pre>
+<p>If you run into an error because your shell does not recognize the
+command “conda” you will need to initialize Anaconda in your shell
+environment with the following:</p>
+<pre class="shell"><code># /path/to/conda init &lt;shell-name&gt;
+/Users/username/anaconda3/bin/conda init zsh</code></pre>
+<p>(Replace the path with the appropriate path on your computer and zsh
+with the appropriate shell name). You can read more in th.e Anaconda FAQ
+<a href="https://docs.anaconda.com/free/anaconda/reference/faq/" class="external-link">here</a></p>
 </div>
 </div>
 </div>
@@ -346,42 +354,7 @@ interactive features will be valuable. To enable the interactive tools
 in JupyterLab, the <code>ipympl</code> package is required. The package
 can be installed with the command</p>
 <pre class="shell"><code>conda install -c conda-forge ipympl</code></pre>
-<div id="callout2" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Enabling the <code>ipympl</code> backend in
-Jupyter notebooks<a class="anchor" aria-label="anchor" href="#callout2"></a>
-</h3>
-<div class="callout-content">
-<p>The <code>ipympl</code> backend can be enabled with the
-<code>%matplotlib</code> Jupyter magic. Put the following command in a
-cell in your notebooks (e.g., at the top) and execute the cell before
-any plotting commands.</p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib widget</span></code></pre>
-</div>
-</div>
-</div>
-</div>
-<div id="callout3" class="callout callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<div class="callout-inner">
-<h3 class="callout-title">Older
-JupyterLab versions<a class="anchor" aria-label="anchor" href="#callout3"></a>
-</h3>
-<div class="callout-content">
-<p>If you are using an older version of JupyterLab, you may also need to
-install the labextensions manually, as explained in the <a href="https://github.com/matplotlib/ipympl#readme" class="external-link">README file</a> for
-the <code>ipympl</code> package.</p>
-</div>
-</div>
-</div>
+<p>::::::::::::::::::::::::::::::::::::::::: callout</p>
 </li>
 <li>
 <p>Open a Jupyter notebook:</p>
@@ -470,6 +443,33 @@ you have added the code, you can run the cell by selecting “Run” -&gt;
 “Run selected cell” in the top menu, or pressing
 <kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
 </div>
+</div>
+</div>
+</div>
+<h2 id="enabling-the-ipympl-backend-in-jupyter-notebooks">Enabling the
+<code>ipympl</code> backend in Jupyter notebooks</h2>
+<p>The <code>ipympl</code> backend can be enabled with the
+<code>%matplotlib</code> Jupyter magic. Put the following command in a
+cell in your notebooks (e.g., at the top) and execute the cell before
+any plotting commands.</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib widget</span></code></pre>
+</div>
+<p>::::::::::::::::::::::::::::::::::::::::::::::::::</p>
+<div id="callout2" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Older
+JupyterLab versions<a class="anchor" aria-label="anchor" href="#callout2"></a>
+</h3>
+<div class="callout-content">
+<p>If you are using an older version of JupyterLab, you may also need to
+install the labextensions manually, as explained in the <a href="https://github.com/matplotlib/ipympl#readme" class="external-link">README file</a> for
+the <code>ipympl</code> package.</p>
 </div>
 </div>
 </div>
