@@ -342,7 +342,7 @@ environment with the following:</p>
 <pre class="shell"><code># /path/to/conda init &lt;shell-name&gt;
 /Users/username/anaconda3/bin/conda init zsh</code></pre>
 <p>(Replace the path with the appropriate path on your computer and zsh
-with the appropriate shell name). You can read more in th.e Anaconda FAQ
+with the appropriate shell name). You can read more in the Anaconda FAQ
 <a href="https://docs.anaconda.com/free/anaconda/reference/faq/" class="external-link">here</a></p>
 </div>
 </div>
@@ -354,7 +354,6 @@ interactive features will be valuable. To enable the interactive tools
 in JupyterLab, the <code>ipympl</code> package is required. The package
 can be installed with the command</p>
 <pre class="shell"><code>conda install -c conda-forge ipympl</code></pre>
-<p>::::::::::::::::::::::::::::::::::::::::: callout</p>
 </li>
 <li>
 <p>Open a Jupyter notebook:</p>
@@ -425,15 +424,7 @@ below the image.</p>
 <div class="empty-div" style="margin-bottom: 50px">
 <!-- This div is intentionally empty to allow the solution to float alone -->
 </div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3">
-  Running Cells in a Notebook
-  </h4>
-</button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
-<div class="accordion-body">
+<h2 id="running-cells-in-a-notebook">Running Cells in a Notebook</h2>
 <p><img src="fig/jupyter_overview.png" alt="Overview of the Jupyter Notebook graphical user interface" class="figure"> To
 run Python code in a Jupyter notebook cell, click on a cell in the
 notebook (or add a new one by clicking the <code>+</code> button in the
@@ -442,12 +433,15 @@ dropdown in the toolbar), and add the Python code in that cell. After
 you have added the code, you can run the cell by selecting “Run” -&gt;
 “Run selected cell” in the top menu, or pressing
 <kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+<div id="callout2" class="callout callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
 </div>
-</div>
-</div>
-</div>
-<h2 id="enabling-the-ipympl-backend-in-jupyter-notebooks">Enabling the
-<code>ipympl</code> backend in Jupyter notebooks</h2>
+<div class="callout-inner">
+<h3 class="callout-title">Enabling the <code>ipympl</code> backend in
+Jupyter notebooks<a class="anchor" aria-label="anchor" href="#callout2"></a>
+</h3>
+<div class="callout-content">
 <p>The <code>ipympl</code> backend can be enabled with the
 <code>%matplotlib</code> Jupyter magic. Put the following command in a
 cell in your notebooks (e.g., at the top) and execute the cell before
@@ -457,14 +451,16 @@ any plotting commands.</p>
 </h3>
 <pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib widget</span></code></pre>
 </div>
-<p>::::::::::::::::::::::::::::::::::::::::::::::::::</p>
-<div id="callout2" class="callout callout">
+</div>
+</div>
+</div>
+<div id="callout3" class="callout callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
 <h3 class="callout-title">Older
-JupyterLab versions<a class="anchor" aria-label="anchor" href="#callout2"></a>
+JupyterLab versions<a class="anchor" aria-label="anchor" href="#callout3"></a>
 </h3>
 <div class="callout-content">
 <p>If you are using an older version of JupyterLab, you may also need to
