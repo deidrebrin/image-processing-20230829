@@ -77,8 +77,9 @@ the distinction between matrices and arrays is not important, we don't really ca
 in its memory. The important thing is that the computer stores values describing the pixels in images, as arrays. And
 the terms matrix and array can be used interchangeably.
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
+
+### Let's practice!
 
 First, the necessary imports:
 
