@@ -106,8 +106,6 @@ e.g. your Desktop or a folder you have created for using in this workshop.
 
    ::::::::::::::
 
-   :::::::::::::: solution
-
    ## Running Cells in a Notebook
 
    ![](fig/jupyter_overview.png){alt='Overview of the Jupyter Notebook graphical user interface'}
