@@ -38,7 +38,7 @@ e.g. your Desktop or a folder you have created for using in this workshop.
    /Users/username/anaconda3/bin/conda init zsh
    ```
 
-   (Replace the path with the appropriate path on your computer and zsh with the appropriate shell name). You can read more in th.e Anaconda FAQ [here](https://docs.anaconda.com/free/anaconda/reference/faq/)
+   (Replace the path with the appropriate path on your computer and zsh with the appropriate shell name). You can read more in the Anaconda FAQ [here](https://docs.anaconda.com/free/anaconda/reference/faq/)
 
    ::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -50,8 +50,6 @@ e.g. your Desktop or a folder you have created for using in this workshop.
    ```shell
    conda install -c conda-forge ipympl
    ```
-
-   ::::::::::::::::::::::::::::::::::::::::: callout
 
 3. Open a Jupyter notebook:
 
@@ -108,8 +106,6 @@ e.g. your Desktop or a folder you have created for using in this workshop.
 
    ::::::::::::::
 
-   :::::::::::::: solution
-
    ## Running Cells in a Notebook
 
    ![](fig/jupyter_overview.png){alt='Overview of the Jupyter Notebook graphical user interface'}
@@ -121,7 +117,7 @@ e.g. your Desktop or a folder you have created for using in this workshop.
    you can run the cell by selecting "Run" -> "Run selected cell" in the top menu,
    or pressing <kbd>Shift</kbd>\+<kbd>Enter</kbd>.
 
-   :::::::::::::::::::::::::
+   ::::::::::::::::::::::::::::::::::::::::: callout
 
    ## Enabling the `ipympl` backend in Jupyter notebooks
 
