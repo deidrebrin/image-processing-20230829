@@ -420,14 +420,13 @@ Python 3 version (as opposed to the one with Python 2). If you wish to
 use an existing installation, be sure to upgrade your scikit-image to at
 least 0.19. You can upgrade to the latest scikit-image using the shell
 command that follows.</p>
-<div id="callout1" class="callout callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Updating scikit-image in an existing Anaconda
-distribution<a class="anchor" aria-label="anchor" href="#callout1"></a>
-</h3>
+<h3 id="updating-scikit-image-in-an-existing-anaconda-distribution" class="callout-title">Updating scikit-image in an existing Anaconda
+distribution</h3>
 <div class="callout-content">
 <pre class="shell"><code>conda upgrade -y scikit-image</code></pre>
 <p>If you run into an error because your shell does not recognize the
@@ -459,7 +458,7 @@ can be installed with the command</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Instructions for Linux &amp; Mac</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Open a terminal and type <code>jupyter lab</code>.</p>
 </div>
@@ -471,7 +470,7 @@ can be installed with the command</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Instructions for Windows</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Launch the Anaconda Prompt program and type <code>jupyter lab</code>.
 (Running this command on the standard Command Prompt will return an
@@ -491,21 +490,21 @@ the notebook:</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> imageio.v3 <span class="im">as</span> iio</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> skimage <span class="im">import</span> transform</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib widget</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># load an image</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>image <span class="op">=</span> iio.imread(uri<span class="op">=</span><span class="st">'data/colonies-01.tif'</span>)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># rotate it by 45 degrees</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>rotated <span class="op">=</span> transform.rotate(image<span class="op">=</span>image, angle<span class="op">=</span><span class="dv">45</span>)</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co"># display the original image and its rotated version side by side</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>)</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">0</span>].imshow(image)</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>ax[<span class="dv">1</span>].imshow(rotated)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="im">import</span> imageio.v3 <span class="im">as</span> iio</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a><span class="im">from</span> skimage <span class="im">import</span> transform</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="op">%</span>matplotlib widget</span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="co"># load an image</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a>image <span class="op">=</span> iio.imread(uri<span class="op">=</span><span class="st">'data/colonies-01.tif'</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="co"># rotate it by 45 degrees</span></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a>rotated <span class="op">=</span> transform.rotate(image<span class="op">=</span>image, angle<span class="op">=</span><span class="dv">45</span>)</span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a></span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a><span class="co"># display the original image and its rotated version side by side</span></span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>)</span>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a>ax[<span class="dv">0</span>].imshow(image)</span>
+<span id="cb4-15"><a href="#cb4-15" tabindex="-1"></a>ax[<span class="dv">1</span>].imshow(rotated)</span></code></pre>
 </div>
 <p>Upon execution of the cell, a figure with two images should be
 displayed in an interactive widget. When hovering over the images with
@@ -523,14 +522,13 @@ dropdown in the toolbar), and add the Python code in that cell. After
 you have added the code, you can run the cell by selecting “Run” -&gt;
 “Run selected cell” in the top menu, or pressing
 <kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
-<div id="callout2" class="callout callout">
+<div id="callout2" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Enabling the<code>ipympl</code>backend in
-Jupyter notebooks<a class="anchor" aria-label="anchor" href="#callout2"></a>
-</h3>
+<h3 id="enabling-the-ipympl-backend-in-jupyter-notebooks" class="callout-title">Enabling the <code>ipympl</code> backend in
+Jupyter notebooks</h3>
 <div class="callout-content">
 <p>The <code>ipympl</code> backend can be enabled with the
 <code>%matplotlib</code> Jupyter magic. Put the following command in a
@@ -539,19 +537,18 @@ any plotting commands.</p>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>matplotlib widget</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="op">%</span>matplotlib widget</span></code></pre>
 </div>
 </div>
 </div>
 </div>
-<div id="callout3" class="callout callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Older
-JupyterLab versions<a class="anchor" aria-label="anchor" href="#callout3"></a>
-</h3>
+<h3 id="older-jupyterlab-versions" class="callout-title">Older
+JupyterLab versions</h3>
 <div class="callout-content">
 <p>If you are using an older version of JupyterLab, you may also need to
 install the labextensions manually, as explained in the <a href="https://github.com/matplotlib/ipympl#readme" class="external-link">README file</a> for
@@ -609,8 +606,8 @@ the <code>ipympl</code> package.</p>
   "url": "https://datacarpentry.github.io/image-processing/instructor/index.html",
   "identifier": "https://datacarpentry.github.io/image-processing/instructor/index.html",
   "dateCreated": "2017-03-14",
-  "dateModified": "2024-02-27",
-  "datePublished": "2024-02-27"
+  "dateModified": "2024-03-05",
+  "datePublished": "2024-03-05"
 }
 
   </script><script>
